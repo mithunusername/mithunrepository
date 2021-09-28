@@ -1,0 +1,148 @@
+[root@host]# mysql -u root -p
+Enter password:******
+
+you can disconnect from the MySQL database any time using the exit command at mysql> prompt.
+
+mysql> exit
+Bye
+
+===========
+What is SQL?
+SQL is the standard language for dealing with Relational Databases. SQL can be used to insert, search, update, and delete database records. SQL can do lots of other operations, including optimizing and maintenance of databases.
+
+SQL Full Form
+SQL stands for Structured Query language, pronounced as “S-Q-L” or sometimes as “See-Quel”… Relational databases like MySQL Database, Oracle, MS SQL Server, Sybase, etc. use ANSI SQL.
+
+SQL syntaxes used in different databases are almost similar, though few RDBMS use a few different commands and even proprietary SQL syntaxes.
+=============
+
+Here are important reasons for using SQL
+
+It helps users to access data in the RDBMS system.
+It helps you to describe the data.
+It allows you to define the data in a database and manipulate that specific data.
+With the help of SQL, you can create and drop databases and tables.
+SQL offers you to use the function in a database, create a view, and stored procedure.
+You can set permissions on tables, procedures, and views.
+
+===============
+es
+Types of SQL Statements
+Here are five types of widely used SQL queries.
+
+Data Definition Language (DDL)
+Data Manipulation Language (DML)
+Data Control Language (DCL)
+Transaction Control Language (TCL)
+Data Query Language (DQL)
+List of SQL Commands
+Here’s a list of some of the most commonly used SQL commands:
+
+CREATE – defines the database structure schema
+INSERT – inserts data into the row of a table
+UPDATE – updates data in a database
+DELETE – removes one or more rows from a table
+SELECT – selects the attribute based on the condition described by the WHERE clause
+DROP – removes tables and databases
+
+====================
+
+SQL Standards
+
+SQL is a language to operate databases. It includes database creation, deletion, fetching rows, modifying rows, etc. SQL is an ANSI (American National Standards Institute) standard language.
+
+
+==================================================
+SQL Language elements
+Here are important elements of SQL language:
+
+
+Keywords: Each SQL statement contains single or multiple keywords.
+
+Identifiers: Identifiers are names of objects in the database, like user IDs, tables, and columns.
+
+Strings: Strings can be either literal strings or expressions with VARCHAR or CHAR data types.
+
+Expressions: Expressions are formed from several elements, like constants, SQL operators, column names, and subqueries.
+
+Search Conditions: Conditions are used to select a subset of the rows from a table or used to control statements like an IF statement to determine control of flow.
+
+Special Values: Special values should be used in expressions and as column defaults when building tables.
+
+Variables: Sybase IQ supports local variables, global variables, and connection-level variables.
+
+Comments: Comment is another SQL element which is used to attach explanatory text to SQL statements or blocks of statements. The database server does not execute any comment.
+
+NULL Value: Use NULL, which helps you to specify a value that is unknown, missing, or not applicable.
+What is a database in SQL?
+A database is made up of a collection of tables that stores a detailed set of structured data. It is a table that contains a collection of rows, referred to as records or tuples, and columns that are also referred to as attributes.
+
+Each column in the table is designed to store a specific type of information, for example, names, dates, dollar amounts, and numbers. 
+
+What is MySQL?
+MySQL is an open source relational database.
+
+MySQL is cross platform which means it runs on a number of different platforms such as Windows, Linux, and Mac OS etc.
+
+================================
+ef listing(request):
+    contact_list = Contact.objects.all()
+    paginator = Paginator(contact_list, 25) # Show 25 contacts per page.
+
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(request, 'list.html', {'page_obj': page_obj})
+
+
+==================================================
+
+class ContactListView(ListView):
+    paginate_by = 2
+    model = Contact
+
+===========------------------
+
+{% for contact in page_obj %}
+    {# Each "contact" is a Contact model object. #}
+    {{ contact.full_name|upper }}<br>
+    ...
+{% endfor %}
+
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
+
+===============================
+
+
+gdgdxgxgxgdgxdxgdgdgxdxdlloooop[oaammithhun
+
+
+
+MITHHUNN vvermmaaa
+mii
+
+
+mmithhuun
+
+mithun vvveerrmaa
+    miitthunn vveerrmaa
+mmiitthun  verm
+
+
+
